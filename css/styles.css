@@ -222,11 +222,18 @@ a {
 .header-link-mob,
 .header-link-mobile{
     color: var(--navyblue);
-    font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+}
+
+.header-link-mob{
+    font-size: 36px;
+}
+
+.header-link-mobile{
+    font-size: 25px;
 }
 
 .header-link-mobile{
@@ -244,6 +251,14 @@ a {
 
 .logo-second {
     color: var(--cloud)
+}
+
+.header-position .list {
+    display: none;
+}
+
+.contacts .list {
+    display: none;
 }
 
 /*Hero*/
@@ -264,6 +279,7 @@ a {
 }
 
 .hero-title {
+    text-align: center;
     font-size: 36px;
     font-weight: 700;
     max-width: 320px;
@@ -306,6 +322,11 @@ a {
 }
 
 .advantages-h,
+.team-name {
+    text-align: center;
+}
+
+.advantages-h,
 .card-h {
     margin-bottom: 8px;
     color: var(--navyblue);
@@ -331,7 +352,7 @@ a {
 }
 
 .doing {
-    padding-bottom: 120px;
+    display: none;
 }
 
 .list-doing:not(:last-child) {
@@ -421,10 +442,10 @@ a {
 
 .customers-li {
     height: 88px;
+    width: calc(100% - 48px);
 }
 
 .customers-logo {
-    padding: 16px 32px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -554,7 +575,6 @@ a {
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
-    gap: 16px;
     border-radius: 4px;
     background: var(--iris);
     color: var(--white);
@@ -576,6 +596,7 @@ a {
 
 .button-container {
     max-width: 268px;
+    margin-bottom: 48px;
 }
 
 .button-portfolio {
@@ -607,6 +628,11 @@ a {
     gap: 48px;
 }
 
+.portfolio-card{
+    width: 288px;
+    margin: 0 auto;
+}
+
 .portfolio-card-a {
     display: block;
     transition: box-shadow 250ms var(--cubic);
@@ -622,8 +648,13 @@ a {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.card-h{
+    font-size: 20px;
+    font-weight: 500;
+}
+
 .card-portfolio-info {
-    max-width: 360px;
+    max-width: 396px;
     padding: 32px 16px;
     border: 1px solid var(--cornflower);
     border-top: none;
@@ -674,12 +705,12 @@ a {
 }
 
 .modal-window {
-    padding: 72px 24px 24px;
+    padding: 72px 10px 10px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 408px;
+    width: 320px;
     min-height: 584px;
     background-color: var(--modal);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -718,7 +749,7 @@ a {
 }
 
 .modal-form {
-    width: 360px;
+    width: 300px;
 }
 
 .form-p {

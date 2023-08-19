@@ -1,6 +1,5 @@
 @media screen and (max-width:395px) {
     .customers-list {
-        padding: 0 8px;
         gap: 72px;
     }
 }
@@ -15,13 +14,38 @@
     .customers-li:nth-child(odd) {
         margin-right: 16px;
     }
+
+    .customers-li {
+        width: calc((100% - 48px) / 2);
+    }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 405px) {
     .input-footer {
         width: 288px;
     }
 }
+
+@media screen and (min-width: 428px) {
+    .header-link-mobile {
+        font-size: 36pxpx;
+    }
+
+    .modal-window {
+        padding: 72px 24px 24px;
+        width: 408px;
+    }
+
+    .modal-form {
+        width: 360px;
+    }
+
+    .portfolio-card{
+        width: 396px;
+        margin: 0;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
 
@@ -31,20 +55,6 @@
         align-items: baseline;
     }
 
-    .advantages-h,
-    .card-h,
-    .team-name {
-        text-align: center;
-    }
-
-    .header-position .list {
-        display: none;
-    }
-    
-    .contacts .list {
-        display: none;
-    }
-    
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/bcg_smartphone.jpg);
@@ -69,6 +79,16 @@
     .btn-open{
         display: none;
     }
+
+    .header-position .list {
+        display: flex;
+    }
+
+    
+    .contacts .list {
+        display: flex;
+    }
+    
 
     nav {
         margin-right: auto;
@@ -121,6 +141,13 @@
         bottom: -1px;
     }
 
+    .advantages-h,
+    .card-h,
+    .team-name {
+        text-align: left;
+    }
+
+
     .advantages-list {
         gap: 24px;
     }
@@ -137,8 +164,20 @@
         gap: 24px;
     }
 
+    .customers-li {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .sosial-title {
+        text-align: left;
+    }
+
+    .footer-warning {
+        text-align: left;
+    }
+
     .footer-content {
-        padding-left: 108px;
+        width: 584px;
         gap: 0;
         justify-content: flex-start;
     }
@@ -159,11 +198,28 @@
 
     .button-container {
         max-width: 100%;
+        margin-bottom: 64px;
+    }
+
+    .button-portfolio{
+        padding: 12px 24px;
     }
 
     .portfolio-list {
         flex-direction: row;
         justify-content: center;
+    }
+
+    .portfolio-list-card{
+        gap: 72px 24px;
+    }
+
+    .card-portfolio-info {
+        max-width: 356px;
+    }
+
+    .portfolio-card{
+        width: 356px;
     }
 }
 
@@ -171,7 +227,6 @@
 
     .hero {
             max-width: 768px;
-            padding: 188px 0;
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)), url(../images/bcg_tablet.jpg);
         }
@@ -212,13 +267,6 @@
     }
 }
 
-@media screen and (max-width: 1157px) {
-    .doing {
-        display: none;
-    }
-}
-
-
 
 @media screen and (min-width: 1158px) {
     .container {
@@ -251,6 +299,10 @@
                     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)), url(../images/bcg_desktop@2x.jpg);
         }
+    }
+
+    .advantages-li {
+        margin-bottom: 0;
     }
 
     .advantages,
@@ -287,10 +339,13 @@
         width: 264px;
     }
 
-    .advantages-p,
-    .card-p,
     .team-front {
         font-weight: 500;
+    }
+
+    .doing{
+        display: flex;
+        padding-bottom: 120px;
     }
 
     .list-team {
@@ -315,24 +370,18 @@
     }
 
     .footer-content {
+        width: 1158px;
         flex-wrap: nowrap;
         padding-left: 16px;
     }
 
     .footer-info {
         margin-right: 120px;
-    }
-
-    .sosial-title {
-        text-align: left;
+        margin-bottom: 0;
     }
 
     .footer-form {
         margin-left: 80px;
-    }
-
-    .footer-warning {
-        text-align: left;
     }
 
     .subscribe {
@@ -347,6 +396,14 @@
 
     .button-portfolio {
         padding: 12px 24px;
+    }
+
+    .card-portfolio-info {
+        max-width: 360px;
+    }
+
+    .portfolio-card{
+        width: 360px;
     }
 }
 .current {
